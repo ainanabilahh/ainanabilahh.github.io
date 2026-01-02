@@ -4,9 +4,9 @@ function About() {
       <div className="max-w-3xl">
         <h2 className="text-4xl mb-8 text-gray-800">About Me</h2>
         <p className="text-xl leading-relaxed text-gray-600">
-          Hey! I’m usually stuck in a 9–5, but in my free time I’m playing HoK, watching anime, or learning 日本語. I love Backstreet Boys (new obsession), J-Pop (since forever), peak 90s–2000s energy, and anything comedy or suspense.
+          Hey! I’m stuck in a 9–5 most days. Off work, I’m usually watching anime or American TV shows, learning 日本語, and living off 90s–2000s music. Comedy and suspense are my comfort genres.
           <br /><br />
-          I was a blogger back in school and fell in love with CSS thingy — which basically explains how I ended up here. But hey, I can handle backend and database stuff too.
+          I started as a blogger back in school, got into HTML, CSS, and JavaScript, and ended up here. Mostly front-end nowadays, with some backend and database work when needed.
           <br /><br />
         </p>
       </div>

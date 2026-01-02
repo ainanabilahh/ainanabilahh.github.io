@@ -3,7 +3,7 @@ import { useState } from 'react'
 function MusicPlayer() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const youtubeVideoId = 'OT5msu-dap8'
+  const youtubeVideoId = 'GZXHBgjQjNM'
 
   return (
     <div className="fixed bottom-8 left-8 z-50">
