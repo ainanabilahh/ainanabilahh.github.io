@@ -1,8 +1,15 @@
+import { motion } from 'framer-motion'
+
 function Hero() {
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center">
       <div className="flex items-center justify-center gap-12 flex-wrap w-full">
-        <div className="text-center">
+        <motion.div className="text-center"
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <h1 className="text-6xl md:text-5xl font-bold mb-4 text-gray-800">
             Aina Roslan
           </h1>
@@ -12,10 +19,17 @@ function Hero() {
           <p className="text-xl text-gray-500">
             Just another debug enthusiast
           </p>
-        </div>
+        </motion.div>
 
-        <div className="relative bg-white p-2.5 pb-10 shadow-md inline-block rotate-2 hover:rotate-[-2deg] transition-transform">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 bg-[#fef4e4] opacity-60 shadow-sm rotate-[-5deg]">
+        <motion.div className="relative bg-white p-2.5 pb-10 shadow-md inline-block cursor-pointer"
+          style={{ rotate: 2 }}
+          whileHover={{ rotate: [-2, 4, -3, 2], transition: { duration: 0.5 } }}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 tape-strip shadow-sm rotate-[-5deg]">
             <div className="absolute inset-0 border border-[#e8dcc8]"></div>
           </div>
           <img
@@ -23,7 +37,10 @@ function Hero() {
             alt="Aina Roslan"
             className="w-[200px] h-[200px] md:w-[250px] md:h-[250px] object-cover block"
           />
-        </div>
+          <p className="absolute bottom-2 left-0 right-0 text-center text-sm text-gray-400 italic"
+            style={{ fontFamily: "'Caveat', cursive" }}
+          >aina, circa now</p>
+        </motion.div>
       </div>
     </section>
   )
