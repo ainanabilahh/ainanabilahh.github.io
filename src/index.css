@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: 2px solid #f4a0a0;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', sans-serif;
   background:
     linear-gradient(to right,
       transparent 0px,
@@ -83,14 +89,4 @@ h1, h2, h3, h4 {
   height: 5px;
   background: rgba(0, 0, 0, 0.07);
   border-radius: 2px 2px 0 0;
-}
-
-/* Spiral binding holes */
-.spiral-hole {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #d8d2c4, #b8b0a0);
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(255, 255, 255, 0.3);
-  border: 1.5px solid #a8a090;
 }
